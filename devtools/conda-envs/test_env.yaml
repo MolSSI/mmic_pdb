@@ -14,7 +14,11 @@ dependencies:
   - pytest-cov
   - codecov
 
+    # OpenMM
+  - openmm
+
     # Pip-only installs
-  #- pip:
-  #  - codecov
+  - pip:
+    - qcelemental
+    - parmed
 
