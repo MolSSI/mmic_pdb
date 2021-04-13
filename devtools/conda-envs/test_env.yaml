@@ -16,6 +16,7 @@ dependencies:
 
     # OpenMM
   - openmm
+  - pdbfixer
 
     # Pip-only installs
   - pip:
