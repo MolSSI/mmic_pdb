@@ -13,11 +13,15 @@ def test_mmic_pdb_imported():
     assert "mmic_pdb" in sys.modules
 
 
-def test_mmic_pdbid():
+@pytest.mark.parametrize(
+    "pdbid,add_atoms,keep_hetero",
+    [("1dzl", "all", "water"), ("4ezi", "none", "none"), ("1lfg", "heavy", "all")],
+)
+def test_mmic_pdbid(pdbid, add_atoms, keep_hetero):
     inp = mmic_pdb.models.PdbFixerInput(
-        pdbid="4EZI",
-        add_atoms="all",
-        keep_hetero="water",
+        pdbid=pdbid,
+        add_atoms=add_atoms,
+        keep_hetero=keep_hetero,
         std_residues=True,
     )
     return mmic_pdb.components.PdbFixerComponent.compute(inp)
