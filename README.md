@@ -7,8 +7,9 @@ mmic_pdb
 
 This is part of the [MolSSI](http://molssi.org) Molecular Mechanics Interoperable Components ([MMIC](https://github.com/MolSSI/mmic)) project. This package uses Peter Eastman's [PDBFixer](https://github.com/openmm/pdbfixer) to extract, fix, and/or convert PDB files to MMSchema molecules. 
 
+![image](mmic_pdb/data/imgs/component.png)
 
-## Code snippet
+### Code snippet
 
 ```python
 from mmic_pdb.component import PdbFixerComponent
