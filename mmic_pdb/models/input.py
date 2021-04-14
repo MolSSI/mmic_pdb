@@ -1,6 +1,5 @@
 from mmelemental.models import ProcInput, Molecule
 from pydantic import Field, validator, root_validator
-from typing import Optional, Dict, List, Union, Tuple
 
 __all__ = ["PdbFixerInput"]
 
