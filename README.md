@@ -5,7 +5,7 @@ mmic_pdb
 [![codecov](https://codecov.io/gh/MolSSI/mmic_pdb/branch/main/graph/badge.svg)](https://codecov.io/gh/MolSSI/mmic_pdb/branch/main)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/MolSSI/mmic_pdb.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/MolSSI/mmic_pdb/context:python)
 
-MMIC for extracting and fixing PDB files converted to MMSchema molecules. Based on Peter Eastman's [PDBFixer](https://github.com/openmm/pdbfixer).
+This is part of the [MolSSI](http://molssi.org) Molecular Mechanics Interoperable Components ([MMIC](https://github.com/MolSSI/mmic)) project. This package uses Peter Eastman's [PDBFixer](https://github.com/openmm/pdbfixer) to extract, fix, and/or convert PDB files to MMSchema molecules. 
 
 
 ## Code snippet
