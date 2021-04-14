@@ -4,7 +4,6 @@ MMIC for extracting and fixing PDB files converted to MMSchema molecules
 """
 
 # Add imports here
-from .mmic_pdb import *
 from .models import *
 from .components import *
 
