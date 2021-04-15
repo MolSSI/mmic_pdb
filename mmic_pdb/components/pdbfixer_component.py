@@ -59,6 +59,8 @@ class PdbFixerComponent(SpecificComponent):
                 fixer.findNonstandardResidues()
                 log.append("Replacing nonstandard residues...\n")
                 fixer.replaceNonstandardResidues()
+            else:
+                fixer.nonstandardResidues = None
 
             # Clean HETATOMS
             if inputs.get("keep_hetero") == "none":
