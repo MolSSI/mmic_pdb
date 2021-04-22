@@ -1,7 +1,7 @@
 from ..models import PdbFixerInput, PdbFixerOutput
 from mmelemental.models import Molecule
 from mmelemental.util.files import random_file
-from mmic.components.blueprints import SpecificComponent
+from mmic.components.blueprints import GenericComponent
 import pdbfixer
 import simtk.openmm.app as app
 import os
@@ -10,7 +10,7 @@ from typing import Dict, List, Tuple, Any, Optional
 __all__ = ["PdbFixerComponent"]
 
 
-class PdbFixerComponent(SpecificComponent):
+class PdbFixerComponent(GenericComponent):
     @classmethod
     def input(cls):
         return PdbFixerInput
