@@ -20,7 +20,7 @@ dependencies:
 
     # Pip-only installs
   - pip:
-    - qcelemental
+    - git+https://github.com/MolSSI/cmselemental@dev
     - git+https://github.com/parmed/parmed.git
     - git+https://github.com/MolSSI/mmic.git
     - git+https://github.com/MolSSI/mmelemental.git
