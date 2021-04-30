@@ -5,7 +5,7 @@ __all__ = ["PdbFixerInput"]
 
 
 class PdbFixerInput(ProcInput):
-    """ Basic input model for pdbfixer. """
+    """Basic input model for pdbfixer."""
 
     molecule: Molecule = Field(None, description="MMSchema molecule input object.")
     pdbid: str = Field(None, description="PDB id to retrieve from RCSB.")
