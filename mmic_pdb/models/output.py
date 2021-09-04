@@ -1,4 +1,5 @@
-from mmelemental.models import ProcOutput, Molecule
+from cmselemental.models import ProcOutput
+from mmelemental.models import Molecule
 from .input import PdbFixerInput
 from pydantic import Field
 from typing import Dict, Tuple, List, Optional, Any
