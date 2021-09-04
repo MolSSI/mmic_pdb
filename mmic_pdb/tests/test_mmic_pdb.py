@@ -23,6 +23,8 @@ def test_mmic_pdb_imported():
 )
 def test_mmic_pdbid(pdbid, add_atoms, keep_hetero):
     inp = mmic_pdb.models.PdbFixerInput(
+        schema_name="",
+        schema_version=1,
         pdbid=pdbid,
         add_atoms=add_atoms,
         keep_hetero=keep_hetero,
@@ -37,6 +39,8 @@ def test_mmic_pdbid(pdbid, add_atoms, keep_hetero):
 )
 def test_mmic_pdbid_fail(pdbid, add_atoms, keep_hetero):
     inp = mmic_pdb.models.PdbFixerInput(
+        schema_name="",
+        schema_version=1,
         pdbid=pdbid,
         add_atoms=add_atoms,
         keep_hetero=keep_hetero,
