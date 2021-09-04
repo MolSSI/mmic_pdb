@@ -1,6 +1,6 @@
 from ..models import PdbFixerInput, PdbFixerOutput
 from mmelemental.models import Molecule
-from mmelemental.util.files import random_file
+from cmselemental.util.files import random_file
 from mmic.components.blueprints import GenericComponent
 import pdbfixer
 import simtk.openmm.app as app
@@ -105,8 +105,12 @@ class PdbFixerComponent(GenericComponent):
         mol = Molecule.from_file(filename)
         os.remove(filename)
 
-        return True, PdbFixerOutput(
+        success = True
+        return success, PdbFixerOutput(
             proc_input=inputs,
+            schema_name=inputs.get("schema_name", ""),
+            schema_version=inputs.get("schema_version", 1),
+            success=success,
             log="".join(log),
             warnings="".join(warnings),
             miss_resids=fixer.missingResidues,
